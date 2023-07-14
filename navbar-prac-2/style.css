@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Libre+Baskerville:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 0 100px;
+}
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Libre Baskerville', serif;
+    color: #84101D;
+    cursor: pointer;
+    white-space:nowrap;
+}
+img{
+    display: none;
+}
+.hamburger{
+    display: none;
+}
+.nav-bar{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr auto;
+}
+.nav-bar ul{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-evenly;
+    justify-self: center;
+    width: 100%;
+}
+.nav-bar .login-btn{
+    justify-self: end;
+}
+
+
+.nav-bar ul .list-item .main{
+    /* display: block; */
+    /* max-width: screen; */
+    color: #052C6C;
+    font-size: 14px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    width: auto;
+}
+.nav-bar ul .list-item{
+    display: inline-block;
+    width: auto;
+    margin-top: 8px;
+}
+.nav-bar ul .list-item .main:hover{
+    color: #052C6C;
+    background:#DAE6FB;
+}
+.nav-bar ul .list-item .main:active{
+    color: #fff;
+    background:#052C6C;
+}
+
+.nav-bar .login-btn{
+    /* display: block; */
+    max-width: screen;
+    color: #fff;
+    background-color: #052C6C;
+    font-size: 14px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.nav-bar .login-btn:hover{
+    color: #052C6C;
+    background:#DAE6FB;
+    border: 1.5px solid #052C6C;
+}
+.nav-bar .login-btn:active{
+    color: #052C6C;
+    background:#b2ceff;
+    border: 1.5px solid #052C6C;
+}
+
+
+.nav-bar ul li a.active{
+    color: #fff;
+    background: #052C6C;
+}
+/* not working^ */
+
+@media only screen and (max-width: 1320px){
+    header {
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 1100px){
+    header {
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 940px){
+    header{
+        justify-content: space-between;
+    }
+    .logo{
+        display:none;
+    }
+    img{
+        display: flex;
+        height: 50px;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+
+    }
+    .hamburger .line{
+        width: 25px;
+        height: 3.5px;
+        background:#052C6C;
+        margin: 4px 0;
+        border-radius: 50px;
+    }
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #fff;
+        overflow: hidden;
+    }
+    .nav-bar.active {
+        height: 450px;
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .nav-bar ul{
+        /* display: block; */
+        margin-right: 0px;
+        margin-top: 0px;
+        right: 0px;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+
+    }
+   
+    .nav-bar.active ul{
+        opacity: 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: right;
+    }
+    .nav-bar ul .list-item .main{
+        /* margin-bottom:12px; */
+        /* text-align:right; */
+        border-radius: 50px;
+        padding: 10px 20px;
+        margin-right: 10px;
+    
+    }
+    .nav-bar .login-btn{
+        /* margin-bottom:12px; */
+        /* margin-right: 20px; */
+        text-align:right;
+        border-radius: 50px;
+        height: 40px;
+        background: white;
+        color: #052C6C;
+        padding: 10px 20px;
+        margin-right: 10px;
+    }
+    .nav-bar .login-btn:hover{
+        color: #052C6C;
+        background:#DAE6FB;
+        border: none;
+    }
+    .nav-bar .login-btn:active{
+        color: #fff;
+        background:#052C6C;
+    }
+}

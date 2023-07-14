@@ -1,0 +1,334 @@
+
+.everythang{
+    margin: none;
+}
+.header-para{
+    margin-top: 0;
+}
+.middle-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    text-align: center;
+}
+.middle-body .left-side{
+    display: flex;
+    flex-direction: column;
+}
+.middle-body .left-side .buttons{
+    padding: 5px;
+    align-items: center;
+ 
+}
+
+.middle-body .left-side .button-two {
+    padding: 5px;
+   display:inline-grid;
+}
+.middle-body .left-side .buttons button{
+    width: 250px;
+    text-align: left;
+    margin-right: auto;
+}
+
+.middle-body .right-side .curr-docs{
+    margin-bottom: 10px;
+    margin-left: 30px;
+    text-align: center;
+}
+.middle-body .right-side .upload-files{
+    margin-top: 0px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+
+
+
+
+/* dropdown */
+
+.select-menu{
+    width: 100%;
+    min-width: 250px;
+    display: inline;
+}
+.select-menu .select-btn{
+    display: flex;
+    height: 36px;
+    background: #052C6C;
+    color: white;
+    padding: 15px 20px;
+    font-size: 13.3333px;
+    font-weight: 700px;
+    border-radius:250px;
+    text-align:center;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border: 1.5px solid #052C6C;
+    width: 250px;
+    margin:auto;
+}
+.select-btn i{
+    font-size: 20px;
+    transition: 0.2s;
+    color: white;
+    font-size: 15px;
+    transition: transform 0.25s ease;
+}
+.select-menu.active .select-btn i{
+    transform: rotate(180deg);
+
+}
+.select-menu .select-btn:active{
+    border-radius: 25px 25px 25px 25px;
+    background: #052C6C;
+    border-top: 1.5px solid #052C6C;
+    border-left: 1.5px solid #052C6C;
+    border-right: 1.5px solid #052C6C;
+    border-bottom: none;
+    
+}
+
+.select-menu .options{
+    padding: 0;
+    
+    display: none;
+}
+.select-menu.active .options{
+    display: block;
+   
+    /* change to block */
+}
+.options .sep{
+    border-bottom: none;
+    border-left: 1.5px solid #052C6C;
+    border-right: 1.5px solid #052C6C;
+    border-top: none;
+}
+.options .sep{
+    width:250px;
+    margin: auto;
+}
+.options .sep-two{
+    width:250px;
+    margin: auto;
+}
+.select-menu.active .select-btn{
+    border-radius: 25px 25px 0px 0px;
+    border-top: 1.5px solid #052C6C;
+    border-left: 1.5px solid #052C6C;
+    border-right: 1.5px solid #052C6C;
+    border-bottom: none;
+}
+.sBtn-text{
+    padding-left: 14px;
+}
+
+.input.active {
+    position: relative;
+}
+.select-menu .options .option{
+    
+    position: relative;
+    background: #052C6C;    
+    color: white;
+    padding: 20px;
+    border-radius: 0px 0 0px 0px;
+    padding: 16px 20px;
+}
+
+.select-menu .options .other {
+    background: #052C6C;    
+    color: white;
+    border-radius: 0px 0 25px 25px;
+    padding-bottom: 17px;
+    padding-top: 15px;
+
+}
+.options .option{
+    display:flex;
+    height: 5px;
+    cursor: pointer;
+    padding: 0px;
+    align-items: center;
+    border-radius: center;
+    background: rgb(255, 255, 255);
+    border-top: 1.5px solid #c7d2e3;
+}
+.options .other{
+    display:flex;
+    height: 5px;
+    cursor: pointer;
+    padding: 0px 20px;
+    align-items: center;
+    border-radius: center;
+    background: white;
+    border-bottom: 1.5px solid #052C6C;
+    border-left: 1.5px solid #052C6C;
+    border-right: 1.5px solid #052C6C;
+    border-top: 1.5px solid #c7d2e3;
+}
+.option .option-text{
+    font-size: 13.3333px;
+    padding-left: 14px;
+}
+.other .option-text{
+    font-size: 13.3333px;
+    padding-left: 14px;
+
+}
+.select-btn:hover{
+    background-color:#1b4994;
+}
+.options .option:hover{
+    background-color:#1b4994;
+}
+.options .other:hover{
+    background-color:#1b4994;
+}
+.options .option:active{
+    background-color:#052C6C;
+}
+.options .other:active{
+    background-color:#052C6C;
+}
+
+/* bottom buttons */
+
+.btns{
+    text-align: center;
+    margin: 50px;
+    
+}
+.submit-btn{
+    margin-right: 10px;
+    width: 100px;
+}
+.submit-btn:hover{
+    background-color: #EBF2FE;
+    font-weight: 700;
+    border-style: solid;
+    border-color: #052C6C;
+    color:#052C6C;
+}
+.reset-btn{
+    background-color: #A9BBDB;
+    color: white;
+    border-color:#A9BBDB;
+    width: 107px;
+}
+.reset-btn:hover{
+    background-color: white;
+    font-weight: 700;
+    border-style: solid;
+    border-color: #A9BBDB;
+    color:#A9BBDB;
+}
+
+
+
+@media only screen and (max-width: 785px){
+    .middle-body .left-side .buttons{
+        padding: 5px;
+        align-items: center;
+        float: center; 
+    }
+    
+    .middle-body .left-side .button-two {
+        padding: 5px;
+       display:inline-grid;
+       float: center;
+    }
+}
+
+@media only screen and (min-width: 1100px){
+    .middle-body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .middle-body .left-side .buttons{
+        padding: 5px;
+        align-items: center;
+        float: right; 
+    }
+    
+    .middle-body .left-side .button-two {
+        padding: 5px;
+       display:inline-grid;
+       float: right;
+    }
+    .middle-body .right-side {
+        float: left;
+        border-left: 3px solid #A9BBDB;
+    }
+    .middle-body .right-side .curr-docs{
+        margin-bottom: 10px;
+        margin-left: 30px;
+        text-align: center;
+    }
+    .middle-body .right-side .upload-files{
+        margin-top: 0px;
+        margin-left: 30px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .middle-body {
+        display: inline-block;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .middle-body{
+        align-items: center;
+    }
+    .middle-body .left-side{
+        float: center;
+        align-items: center;
+        
+    }
+    .middle-body .left-side .buttons{
+        padding: 5px;
+        align-items: center;
+        float: center; 
+    }
+    
+    .middle-body .left-side .button-two {
+        padding: 5px;
+       display:inline-grid;
+       float: center;
+    }
+    .middle-body .right-side .curr-docs{
+        margin-top: 50px;
+    }
+    .middle-body .right-side .curr-docs{
+        margin-bottom: 10px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .middle-body .right-side .upload-files{
+        margin-top: 0px;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 385px){
+    .btns{
+        text-align: center;
+        margin: 50px;
+        
+    }
+    .submit-btn{
+        margin-bottom: 10px;
+        width: 100px;
+    }
+    .reset-btn{
+        background-color: #A9BBDB;
+        color: white;
+        border-color:#A9BBDB;
+        width: 107px;
+    }
+}

@@ -1,0 +1,104 @@
+/* renewal */
+.renewal-container p{
+    color: #052C6C;
+}
+.renewal-container button{
+    margin-top: 10px;
+}
+.renewal-container span{
+    color: #84101D;
+}
+
+/* members */
+.members-container .header .desc{
+    color: #052C6C;
+}
+/* table */
+.members-container .gdm-table{
+    margin-top: 40px;
+}
+.members-container .gdm-table .title-two{
+    margin-top: 20px;
+    float: left;
+}
+.members-container .gdm-table p{
+    color:#052C6C;
+    margin-bottom: 0;
+}
+.members-container .gdm-table table{
+    color:#052C6C;
+    margin-top: 15px;
+    float: left;
+}
+.members-container .gdm-table table .top-row{
+    background: #052C6C;
+    color: white;
+}
+.members-container .btn{
+    margin-top: 20px;
+    float: left;
+}
+
+
+/* newapp */
+.members-container .form{
+    justify-content:center;
+    margin-top: 50px;
+    border: 2px solid #052C6C;
+    padding: 20px 30px;
+    padding-bottom: 40px;
+}
+
+.members-container .form .three-name{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.members-container .form .email-questions{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 20px;
+}
+.members-container .form .email-questions .email-check{
+    display: flex;
+    
+}
+.members-container .form .email-questions .email-check label{
+    margin-top: 30px;
+}
+.members-container .form .email-questions .email-check input{
+    margin-top: 25px;
+    margin-left: 10px;
+}
+.members-container .form .jobs-applied-for{
+    margin-top: 20px;
+    display: inline-block;
+}
+.members-container .form .jobs-applied-for input{
+    margin-left: -20px;
+}
+.members-container .form .jobs-applied-for p{
+    color:#052C6C;
+}
+.memebers-container .form .make{
+    display:flex;
+}
+.memebers-container .form .make label{
+    width: 500px;;
+}
+.members-container .form .make input{
+    width: 13px;
+    
+}
+.bottom-btns{
+    margin-top: 20px;
+    justify-content: center;
+ 
+    margin-right: auto;
+  
+}
+.bottom-btns button{
+    text-align: center;
+
+    margin-right: 10px;
+
+}

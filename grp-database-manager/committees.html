@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Group Members</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="renewal.css">
+</head>
+<body>
+
+    <div class="members-container">
+        <div class="header">
+            <h2 class="title">Set Up Search Committees</h2>
+            <p class="desc">
+                By default, applications to all positions can be accessed by all faculty members in your group unless they are restricted by creating committees. The following is a list of all the current positions with their committee settings. Click on the [*tag*] links below to create/update a search committee for each position.
+
+                <br><br>If you really need to further limit some faculty's permissions or grant additional access outside committees, or limit a group manager to some positions, you can do that for one faculty or multiple faculty. You can also list the access restrictions on applications, or update the ad hoc search committee view for each faculty, only if necessary. You should rarely need these links.
+            </p>
+        </div>
+
+        <div class="gdm-table">
+            <p class="title">Group Database Manager:</p>
+
+            <table>
+                <tr class="top-row">
+                    <td><b>Jobs</b></td>
+                    <td><b>Faculty Only</b></td>
+                    <td><b>Faculty Excluded</b></td>
+                    <td><b>Last Login</b></td>
+                    <td><b>Chairs</b></td>
+                    <td><b>Delete?</b></td>
+                </tr>
+                <tr>
+                    <td>Job 2 (2022/12/08)</td>
+                    <td>no committee set, accessible by all members</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <button class="delete-btn" onclick="return this.parentNode.parentNode.remove();">Delete</button>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+
+        <div class="btn">
+            <button class="reset-btn">RESET</button>
+        </div>
+        
+        
+        
+        <script src="members.js"></script>
+        
+    </div>
+    
+</body>
+</html>

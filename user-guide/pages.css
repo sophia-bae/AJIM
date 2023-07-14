@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+
+.go-back button{
+    border-style: solid;
+  border-color: #052C6C;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #052C6C;
+  padding: 8px 32px;
+  color: white;
+  font-weight: 700;
+  font-family: 'Lato';
+  margin-top: 30px;
+  /* margin-left: 50px; */
+  margin-bottom: 30px;
+}
+/* first-one */
+
+.container .title h3{
+    text-align: center;
+    font-family: 'Libre Baskerville';
+    color: #84101D;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.container .title p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color:#052C6C;
+}
+.line{
+    width: 75%;
+    height: 2px;
+    background:#84101D;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+    /* body text */
+.container .text p{
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    color: #052C6C;
+    line-height: 1.5em;
+}
+.container .text-two p{
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    color: #052C6C;
+    line-height: 1.5em;
+}
+.container .text .bold{
+    margin-top: -25px;
+    margin-bottom: -25px;
+    text-decoration-line:underline;
+}
+.container .text ul{
+    margin-right: 20px;
+    margin-left: 125px;
+    margin-top: 40px;
+}
+.container .text ul li{
+    text-align: left;
+    padding-bottom: 10px;
+    color:#052C6C;
+    line-height: 1.5em;
+}
+.container .text .uni{
+    margin-top: 20px;
+}
+
+/* third overview */
+.container .text ul .list-item{
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+.container .text .first-desc{
+    font-size: 20px;
+}
+.container .text .second-desc{
+    margin-top: 10px;
+}
+
+/* loggin in and getting started */
+.container .text h3{
+    font-size: 24px;
+    margin-top: 50px;
+}
+.container .text ol{
+    margin-right: 20px;
+    margin-left: 125px;
+    margin-top: 15px;
+}
+.container .text ol li{
+    text-align: left;
+    padding-bottom: 10px;
+    color:#052C6C;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+}
+.container .text ol .first-bold{
+    font-size: 18px;
+}
+
+/* user guides */
+.container .text .list-item a{
+    color: #84101D;
+}
+
+@media screen and (max-width: 550px){
+    .container .text ul{
+        margin-right: 20px;
+        margin-left: 75px;
+        margin-top: 10px;
+    }
+}

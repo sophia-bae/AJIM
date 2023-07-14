@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Group Members</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="renewal.css">
+</head>
+<body>
+
+    <div class="members-container">
+        <div class="header">
+            <h2 class="title">List of Group Members</h2>
+            <p class="desc">
+                List of members in your group. You can click on the 'new' or 'multiples' links above to add new members. Click on an Uid# below to update an existing member or set a new password. Click on  in the 'Uid' column to assume that faculty member's identity in case you need to do anything on his/her behalf, click on 'UnAssume' menu to back out, with all accesses logged. Check the "Delete?" checkboxes and press the "Delete" button to delete selected members. Select 'Committees' from the 'Admin' menu above to set up search committees or grant additional access rights if needed. By default, applications to all positions are accessible by all faculty members in your group unless they are restricted by creating committees.
+    
+                <br><br>The EEO office logins are email addresses which can access the raw EEO data (if it's not disabled by upper level config); they can't be any group managers or faculty members. Please make sure that the users with these logins are legally authorized to access the EEO data associated with individual applicants. All access will be logged.
+            </p>
+        </div>
+
+        <div class="gdm-table">
+            <p class="title">Group Database Manager:</p>
+
+            <table>
+                <tr class="top-row">
+                    <td><b>Uid</b></td>
+                    <td><b>Full Name</b></td>
+                    <td><b>Email</b></td>
+                    <td><b>Last Login</b></td>
+                    <td><b>Password Emailed</b></td>
+                    <td><b>Delete?</b></td>
+                </tr>
+                <tr>
+                    <td>625</td>
+                    <td>sdffgag</td>
+                    <td>andrea.testa@epfl.ch</td>
+                    <td>2023/07/11 10:43:21</td>
+                    <td>0000/00/00 00:00:00</td>
+
+                </tr>
+            </table>
+        </div>
+
+        <div class="gdm-table">
+            <p class="title-two">Faculty Members:</p>
+
+            <table class="gdm-table-two">
+                <tr class="top-row">
+                    <td><b>Uid</b></td>
+                    <td><b>Full Name</b></td>
+                    <td><b>Email</b></td>
+                    <td><b>Last Login</b></td>
+                    <td><b>Password Emailed</b></td>
+                    <td><b>Delete?</b></td>
+                </tr>
+                <tr class="row">
+                    <td>1000000227</td>
+                    <td></td>
+                    <td>chino#1@fmradio.com	</td>
+                    <td>2016/10/08 03:28:29	</td>
+                    <td>2015/09/14 20:07:05</td>
+                    <td>
+                        <button class="delete-btn" onclick="return this.parentNode.parentNode.remove();">Delete</button>
+                    </td>
+
+                </tr>
+                <tr class="row">
+                    <td>1000000228</td>
+                    <td></td>
+                    <td>Cinnamon@grandma.com	</td>
+                    <td>2016/11/30 12:27:07		</td>
+                    <td>2015/09/14 20:07:05	</td>
+                    <td>
+                        <button class="delete-btn" onclick="return this.parentNode.parentNode.remove();">Delete</button>
+                    </td>
+
+                </tr>
+                <tr class="row">
+                    <td>1000000226</td>
+                    <td></td>
+                    <td>happy@fmail.com	</td>
+                    <td>2015/10/20 13:01:27	</td>
+                    <td>0000/00/00 00:00:00	</td>
+                    <td>
+                        <button class="delete-btn" onclick="return this.parentNode.parentNode.remove();">Delete</button>
+                    </td>
+
+                </tr>
+                <tr class="row">
+                    <td>1000000229</td>
+                    <td></td>
+                    <td>missy#4@duke.edu	</td>
+                    <td>2016/08/30 17:53:12	</td>
+                    <td>2015/09/14 20:07:05	</td>
+                    <td>
+                        <button class="delete-btn" onclick="return this.parentNode.parentNode.remove();">Delete</button>
+                    </td>
+
+                </tr>
+            </table>
+
+
+        </div>
+
+        <div class="btn">
+            <button class="reset-btn">RESET</button>
+        </div>
+        
+        
+        
+        <script src="members.js"></script>
+        
+    </div>
+    
+</body>
+</html>

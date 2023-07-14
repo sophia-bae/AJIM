@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+    color:#052C6C;
+}
+
+.container{
+    text-align: center;
+    
+}
+input:focus {
+    outline-width: 0;
+}
+textarea:focus {
+    outline-width: 0;
+}
+
+.container .content{
+    
+    align-items: center;
+    justify-content: space-between;
+}
+h1{
+    font-size: 30px;;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+.message{
+   
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    margin: 16px auto 0 auto;
+}
+
+
+.container .content .outside-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+/* entire form */
+.container .content .outside-box .form-box{
+    
+    border: 1.5px solid #052C6C;
+    margin: 30px;
+    padding: 50px;
+    /* columns: 2; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* min-width: 600px;
+    width: 100%;
+    max-width: 1000px; */
+   
+}
+
+.form-box .left-side{
+    margin-right: 20px;
+}
+.form-box .right-side{
+    margin-left: 20px;
+}
+
+/* the other input */
+.container .content .form-box .input{
+    padding: 7px;
+  
+    
+    /* how to position? left and right */
+}
+/* the other input titles */
+.container .content .form-box .input .label{
+    padding: 7px;
+    /* text-align: left; */
+    
+    /* how to position text more left + even subject and msg text */
+}
+/* the other input boxes */
+.container .content .form-box .input input{
+    height: 25px;
+    width: 250px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1.5px solid #052C6C;
+
+}
+/* subject */
+
+/* specific input */
+.container .content .form-box .input #f-name{
+    position: absolute;
+    top: 300px;
+    left:200px;
+    width: 200px;
+    height: 100px;
+}
+
+.container .content .form-box .input #eMail{
+    margin: 10px;
+}
+.container .content .form-box .right-side .sub{
+    padding: 4px;
+}
+/* subject input */
+.container .content .form-box .sub input{
+    height: 30px;
+    width: 250px;
+    border: 1.5px solid #052C6C;
+}
+
+
+.container .content .form-box .sub .label{
+    margin: 10px;
+}
+.container .content .form-box .msg .label{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+textarea{
+    height: 150px;
+    width: 250px;
+    border: 1.5px solid #052C6C;
+    resize: none;
+    padding: 5px;
+}
+.container .content .form-box .btn button{
+    margin-top: 20px;
+    border: none;
+    background-color: #052C6C;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+/* button hover */
+.container .content .form-box .btn button:hover{
+    background-color:#093f95;
+}
+.container .content .form-box .btn button:active{
+    background-color:#052C6C;
+}
+
+
+
+
+
+
+/* dropdown */
+
+.select-menu{
+    width: 265px;
+    margin: 0px auto;
+}
+.select-menu .select-btn{
+    display: flex;
+    height: 7px;
+    background: rgb(255, 255, 255);
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius:250px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border: 1.5px solid #052C6C;
+}
+.select-btn i{
+    font-size: 20px;
+    transition: 0.2s;
+}
+.select-menu.active .select-btn i{
+    transform: rotate(180deg);
+
+}
+.select-menu .select-btn:active{
+    border-radius: 25px;
+    background: rgb(255, 255, 255);
+    border-top: 1.5px solid #052C6C;
+    border-left: 1.5px solid #052C6C;
+    border-right: 1.5px solid #052C6C;
+    border-bottom: 1.5px solid #052C6C;
+    
+}
+.select-menu .options{
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+.select-menu.active .options{
+    display: block;
+   
+    /* change to block */
+}
+.options .sep{
+    border-bottom: none;
+    border-left: 1.5px solid #052C6C;
+    border-right: 1.5px solid #052C6C;
+    border-top: none;
+}
+.select-menu.active .select-btn{
+    border-radius: 25px 25px 0px 0px;
+    border-top: 1.5px solid #052C6C;
+    border-left: 1.5px solid #052C6C;
+    border-right: 1.5px solid #052C6C;
+    border-bottom: none;
+}
+
+.input.active {
+    position: relative;
+}
+.select-menu .options .option{
+    
+    position: relative;
+    background: rgb(255, 255, 255);    padding: 20px;
+    border-radius: 0px 0 0px 0px;
+    padding: 16px 20px;
+}
+
+.select-menu .options .other {
+    background: rgb(255, 255, 255);    border-radius: 0px 0 25px 25px;
+    padding-bottom: 22px;
+    padding-top: 14px;
+
+}
+.options .option{
+    display:flex;
+    height: 5px;
+    cursor: pointer;
+    padding: 0px;
+    align-items: center;
+    border-radius: center;
+    background: rgb(255, 255, 255);
+    border-top: 1.5px solid #c7d2e3;
+}
+.options .other{
+    display:flex;
+    height: 5px;
+    cursor: pointer;
+    padding: 0px 20px;
+    align-items: center;
+    border-radius: center;
+    background: white;
+    border-bottom: 1.5px solid #052C6C;
+    border-left: 1.5px solid #052C6C;
+    border-right: 1.5px solid #052C6C;
+    border-top: 1.5px solid #c7d2e3;
+}
+.option .option-text{
+    font-size: 16px;
+}
+.other .option-text{
+    font-size: 16px;
+
+}
+.select-btn:hover{
+    background-color:rgb(239, 239, 239);
+}
+.options .option:hover{
+    background-color:rgb(239, 239, 239);
+}
+.options .other:hover{
+    background-color:rgb(239, 239, 239);
+}
+.options .option:active{
+    background-color:rgb(215, 215, 215);
+}
+.options .other:active{
+    background-color:rgb(215, 215, 215);
+}
+
+
+
+
+@media only screen and (max-width: 700px){
+    h1{
+        text-align: center;
+        display: block;
+    }
+    .outside-box{
+        width: auto;
+    }
+    .container .content .outside-box .form-box{
+        width: 100%;
+        display: inline;
+    }
+   
+    .form-box .left-side{
+        margin-right: 0px;
+    }
+    .form-box .right-side{
+        margin-left: 0px;
+    }
+    .container .content .form-box .input #f-name{
+        width: auto;
+    }
+
+}
+@media only screen and (min-width: 913px){
+    .message{
+        
+        margin-top: 10px;
+        max-width: 870px;
+        display: flex;
+        flex: wrap;
+        float: center;
+        text-align: center;
+        justify-content: center;
+    }
+}
+

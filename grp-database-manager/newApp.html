@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Applicants</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="renewal.css">
+</head>
+<body>
+    <div class="members-container">
+        <div class="header">
+            <h3 class="title">Enter New Applicants</h3>
+            <p class="desc">Add new applicants here who are not already in the database, so that they will appear on your "noCover" list. It could happen that the applicant is already in the database but doesn't show up on your applicant list, simply because the applicant hasn't applied online for any of your jobs yet, which is OK. Click on the "noCover" link (under the "Admin" menu above) to see who are currently on the list. If you have "Email?" checked, the applicant will receive a standard email message; you can customize the email message in the "Message for 'NewApp'" box on the "Config' form under the "Admin" menu. The applicant will have 2 days to complete the application if the position doesn't allow any updates after deadline or display/review date; you can also complete the application yourself on the applicant's behalf if you prefer.</p>
+        </div>
+
+        <div class="form">
+            <div class="three-name">
+                <div class="last">
+                    <label for="input">Last (Family) Name:</label>
+                    <input class="inputLine" type="text">
+                </div>
+                <div class="first">
+                    <label for="input">First Name or Initial:</label>
+                    <input class="inputLine" type="text">
+                </div>
+                <div class="middle">
+                    <label for="input">Middle Name or Initial:</label>
+                    <input class="inputLine" type="text">
+                </div>
+            </div>
+
+            <div class="email-questions">
+                <div class="email">
+                    <label for="input">Email Address:</label>
+                        <input class="inputLine" type="text">
+                </div>
+                <div class="email-check">
+                    <label for="input">Email:</label>
+                        <input class="checkbox" type="checkbox">
+                </div>
+            </div>
+
+        
+            <div class="jobs-applied-for">
+                <label for="input">Jobs Applied For:</label>
+                <input class="inputLine" type="checkbox" >
+                <p>[TAG] Job2</p>
+            </div>
+           
+            <div class="make">
+                <label for="input">Make the applicant(s) appear on main List page (by creating a coversheet)?</label>
+                <input class="inputLine" type="checkbox" >
+            </div>
+           
+        </div>
+
+        <div class="bottom-btns">
+            <button class="submit-btn">SUBMIT</button>
+            <button class="reset-btn">RESET</button>
+
+        </div>
+
+    </div>
+
+
+    <script src="newApp.js"></script>
+    
+</body>
+</html>

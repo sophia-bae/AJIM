@@ -1,0 +1,407 @@
+/* NOTES */
+
+/* BUTTONS: */
+/* Use <a class="button"> if your button has a navigation link to other pages, DO NOT use the <button> tag in this case */
+
+/* SEARCH FILTERS */
+/* Div containing the filter "button" and the dropdown window should have class="filterDropDown" */
+/* The filter "button" should be a div with class="filterBtn" */
+/* Div containing the dropdown window should have class="dropDownContent" */
+/* each checkbox element in the dropdown should have its own div with class="option" */
+/* HTML and javascript for a filter button is in discord */
+
+/* SEARCH BAR: */
+/* There should be a div containing just the search bar input box and the icon button, with class="searchBar" */
+/* The icon button should have class="searchIcon" */
+/* For the all filters button, add the filter icon inside the button, use class="allFiltersIcon" for the image */
+/* The input search box should have class="inputSearch" */
+
+/* INPUTS */
+/* Use lines for short input and square boxes for bigger text inputs */
+/* input lines should have class="inputLine" */
+/* single-line input boxes should have class="inputBox" */
+/* multi-line input boxes should use <textarea> tag */
+
+/* ---------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville:wght@700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    padding: 0 32px;
+    font-family: 'Lato';
+/*  need negative margins for certain pages */
+    font-weight: 700;
+}
+
+a{
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #052C6C;
+}
+
+h1{
+  Font-family: Libre Baskerville;
+  font-weight: 700;
+  Font-size: 56px;
+  color: #84101D;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+h2{
+  font-weight: 700;
+  color: #052C6C;
+  font-size: 40px;
+  margin: 0 0 32px 0;
+  text-align: center;
+}
+
+h3{
+  font-weight: 700;
+  color: #052C6C;
+  font-size: 32px;
+  text-align: center;
+  margin: 0 0 24px 0;
+}
+
+h4{
+  font-weight: 700;
+  font-size: 24px;
+  color: #052C6C;
+  text-align: center;
+  margin: 0 0 16px 0;
+} 
+
+p{  /* paragraph text, job descriptions, about page introduction, etc. */
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  margin: 8px auto;
+}
+
+.pBlue{  /* blue text, for instructions, etc. */
+  font-weight: 700;
+  font-size: 16px;
+  color: #052C6C;
+  margin: 8px auto;
+}
+
+.headingDescription{ /* for the description/instruction text below the page heading */
+  font-size: 16px;
+  color: #000000;
+  margin: 0 50px 8px 50px;
+  text-align: center;
+}
+
+.header-para{
+  text-align: center;
+}
+
+
+
+/* ------------------ Search Bar ------------------------ */
+.box-searchBar {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin: auto;
+}
+
+.searchBar{  /* the div containing the search bar input and the icon button */
+  border: solid;
+  border-color: #8D8D8D;
+  border-radius: 50px;
+  width: 400px; 
+  height: 40px;
+  padding: 8px, 24px;
+  text-align: left;
+  color: #8D8D8D;
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 20px;
+  align-items: center;
+  position:relative; 
+  background-color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.searchIcon{ /* the magnifying glass icon (this is a button) */
+  border-style: none;
+  background-image: url(Images/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  padding: 0;
+  position:absolute;
+  right:4px;
+  background-color: white;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.searchIcon:hover{ /* clear hover effect for search bar icon (the magnifying glass) */
+  background-color:white;
+  border-style: none;
+  border-color: none;
+  color:none;
+}
+
+.inputSearch{ /* input box for the search bar */
+  border:none;
+  font-size: 16px;
+  font-family: 'Lato';
+  font-weight: 700;
+  padding: 8px 0 8px 0;
+  outline:none;
+  width: 90%;
+  top:50%;
+  transform: translateY(-50%);
+  position:absolute;
+  border-radius: 0 50% 50% 0;
+
+}
+
+
+/* ------------------ Regular Button ------------------------ */
+button{
+  font-size: 16px;
+  font-family: 'Lato';
+  font-weight: 700;
+  border-style: solid;
+  border-color: #052C6C;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #052C6C;
+  padding: 8px 32px;
+  color: white;
+  font-weight: 700;
+}
+
+
+button:hover{
+  background-color: #dae6fb;
+  font-weight: 700;
+  border-style: solid;
+  border-color: #052C6C;
+  color:#052C6C;
+}
+
+
+/* ------------------ Button with navigation link ------------------------ */
+.button{
+  font-size: 16px;
+  font-family: 'Lato';
+  font-weight: 700;
+  border-style: solid;
+  border-color: #052C6C;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #052C6C;
+  padding: 8px 32px;
+  color: white;
+  font-weight: 700;
+}
+
+.button:hover{
+  background-color: #dae6fb;
+  font-weight: 700;
+  border-style: solid;
+  border-color: #052C6C;
+  color:#052C6C;
+}
+
+
+
+/* ------------------ Search Bar Filters ------------------------ */
+.filterBtn{
+  border-style: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #dae6fb;
+  padding: 8px 16px 8px 32px;
+  color:#052C6C; 
+  align-items: center; 
+}
+
+.filterBtn:hover{
+  border:none;
+  background-color: #EBF2FE;
+}
+
+.filterDropDown{
+  position:relative;
+  display: inline-block;
+}
+
+.filterBtn:focus{
+  background-color: #dae6fb;
+}
+
+.dropDownContent{
+  display: none;
+  position: absolute;
+  background-color: #dae6fb;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: -8px 8px 4px -4px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  padding: 6px;
+}
+
+.show{
+  display:block;
+}
+
+.checkBox::before {
+  /* content: "\2716"; */
+  content: "";
+  font-size: 14px;
+  color: transparent;
+  position: absolute;
+  pointer-events: none;
+}
+
+.checkBox:checked::before {
+  background-color: #052C6C;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+}
+
+.checkBox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 2px solid #052C6C;
+  position: relative;
+  margin: auto;
+}
+
+.option{
+  display: grid;
+  grid-template-columns: 30px 1fr;
+}
+
+.filterBtn>img{
+  width: 14px;
+  margin-left: 16px;
+}
+
+#allFiltersIcon{
+  margin: 0 8px 0 0;
+  width: 18px;
+}
+
+/* ---------------------- Input Lines ------------------------ */
+.inputLine{
+  width: 90%;  /* 90% of the max width of the div around it, need to center the div */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1.5px solid #052C6C;
+  padding: 8px 0 8px 0;
+  Font-family: 'Lato';
+  color: #052C6C;
+  font-size: 16px;
+}
+
+label{
+  font-family: 'Lato';
+  color:#052C6C;
+  font-weight: 700;
+  font-size: 16px;
+  display: block;
+  padding: 8px 0 8px 0;
+}
+
+.inputLine:focus{
+  outline-width: 0;
+}
+
+
+/* ---------------------- Input Boxes ------------------------ */
+.inputBox{
+  width: 100%;  /* 90% of the max width of the div around it, set pixel maxwidth for div if needed */
+  border: 1.5px solid #052C6C;
+  padding: 8px 0 8px 0;
+  Font-family: 'Lato';
+  color: #052C6C;
+  font-size: 16px;
+}
+
+textarea{
+  height: 150px;
+  width: 100%; /* 90% of the max width of the div around it, set pixel maxwidth for div if needed */
+  border: 1.5px solid #052C6C;
+  resize: none;
+  padding: 5px;
+  Font-family: 'Lato';
+  color: #052C6C;
+  font-size: 16px;
+}
+
+textarea:focus{
+  outline-width: 0;
+}
+
+
+
+/* ---------------------- Table ------------------------ */
+td, th{
+  border: 1px solid;
+  padding: 14px;
+}
+
+table {
+  border: 1px solid;
+  border-collapse: collapse;
+  text-align: left;
+  width: 90%;
+  text-align: left;
+  margin: 24px auto;
+}
+
+table td:nth-child(1), table th:nth-child(1) {  /* styeles  */
+  text-align: center;
+  width:10px;
+}
+
+td{
+  font-weight: 500;
+}
+
+th{
+  font-weight: 700;
+  background-color: #052C6C;
+  color:#dae6fb;
+}
+
+/* --------------------------------- Lists ------------------------ */
+ul{
+  list-style-position: inside;
+  padding-left: 32px;
+  color: #052C6C;
+}
+li{
+  margin-bottom: 8px;
+}
+ol{
+  list-style-position: inside;
+  padding-left: 32px;
+  color: #052C6C;
+}

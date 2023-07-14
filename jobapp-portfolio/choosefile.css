@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+  }
+  body {
+    background-color: #025bee;
+  }
+  .container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 34.37em;
+    position: relative;
+    margin: 3.12em auto;
+    padding: 3.12em 1.25em;
+    border-radius: 0.43em;
+    box-shadow: 0 1.25em 2.18em rgb(1, 28, 71, 0.3);
+  }
+  input[type="file"] {
+    display: none;
+  }
+.choose-file-btn {
+    display: block;
+    position: relative;
+    border-style: solid;
+    border-color: #052C6C;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #052C6C;
+    padding: 8px 32px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Lato';
+    margin: auto;
+    text-align: center;
+    width: 90%;
+    cursor: pointer;
+  }
+  .choose-file-btn:hover{
+    background-color: #EBF2FE;
+    font-weight: 700;
+    border-style: solid;
+    border-color: #052C6C;
+    color:#052C6C;
+  }
+  #num-of-files {
+    font-weight: 400;
+    text-align: center;
+    margin: 1.25em 0 1.87em 0;
+    color: rgb(113, 113, 113);
+  }
+  ul {
+    list-style-type: none;
+  }
+  .container li {
+    font-weight: 500;
+    background-color: #eff5ff;
+    color: #025bee;
+    margin-bottom: 1em;
+    padding: 1.1em 1em;
+    border-radius: 0.3em;
+    display: flex;
+    justify-content: space-between;
+  }

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="master.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+  </head>
+<body>
+    
+
+    <div class="container">
+        <div class="content">
+            
+            <h3 class="title">Contact Us</h3>
+
+            <div class="header2">
+              <p class="message">
+                Please send your comments, suggestions, and requests for help using the form below. 
+                General inquiries about employers, one’s application status, and/or necessary files should be sent to the employers directly. 
+                For more information, please visit the FAQs page or email us at support@academicjobsonline.org.
+              </p>
+            </div>
+
+            <div class="outside-box">
+              
+              <form class="form-box">
+
+                <div class="left-side">
+                  <div class="input" id="f-name">
+                    <div class="label">First Name *</div>
+                    <input type="text" id="fNameInput">
+                  </div>
+    
+                  <div class="input" id="lName">
+                    <div class="label">Last Name *</div>
+                    <input type="text" id="lNameInput">
+                  </div>
+    
+                  <div class="input" id="aCC">
+                    <div class="label">Acount Type *</div>
+                    <!-- <input type="text" placeholder="Select" required> -->
+  
+                    <div class="select-menu">
+                      <div class="select-btn">
+                        <span class="sBtn-text">Select</span>
+                        <i class="bx bx-chevron-down"></i>
+                      </div>
+        
+                      <ul class="options">
+                        <div class="sep">
+                          <li class="option">
+                            <span class="option-text">Job Applicant</span>
+                          </li>
+                          <li class="option">
+                              <span class="option-text">Employer & Faculty</span>
+                            </li>
+                            <li class="option">
+                              <span class="option-text">Program Nominator</span>
+                            </li>
+                            <li class="option">
+                              <span class="option-text">Reference Writer</span>
+                            </li>
+                        </div>
+                        
+                          <li class="other">
+                            <span class="option-text" >Other</span>
+                          </li>
+                      </ul>
+      
+                    </div>
+    
+                    <div class="input" id="eMail">
+                      <div class="label" id="emailLabel">Email Address *</div>
+                      <input type="text" id="emailInput">
+                    </div>
+    
+                  </div>
+                </div>
+                
+                <div class="right-side">
+    
+                  <div class="sub" >
+                    <div class="label">Subject *</div>
+                    <input type="text" id="sub-text">
+                  </div>
+    
+                  <div class="msg">
+                    <div class="label">Message *</div>
+                    <textarea id="msg-text" rows="10" cols="35"></textarea>
+                    <!-- <input type="text" id="msg-text"> -->
+                  </div>
+    
+                  <div class="btn">
+                    <button type="submit" class="send-btn" onclick="getValue()">SEND</button>
+                  </div>
+  
+                </div>
+                
+  
+              </form>
+
+
+
+            </div>
+            
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    <script src="contact.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>

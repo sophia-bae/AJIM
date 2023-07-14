@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coversheet</title>
+    <link rel="stylesheet" href="coversheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <div class="coversheet-container">
+        
+
+        <div class="go-back">
+            
+            <a href="portfolio.html">
+                
+                <button class="go-back-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    &nbsp; Go Back to My Portfolio
+                </button>
+            </a>
+            
+        </div>
+        <div class="heading">
+            <h1 class="title">Standard Coversheet</h1>
+            <p class="desc">This cover sheet is provided as an aid to departments in processing job applications. It should be included with your other application material. Please print or type.</p>
+        </div>
+        <form action="" class="form">
+            <div class="first-division">
+
+                <div class="input" id="f-name">
+                    <div class="label">First Name *</div>
+                    <input type="text" class="input-text">
+                </div>
+                <div class="input" id="l-name">
+                    <div class="label">Last Name *</div>
+                    <input type="text" class="input-text">
+                </div>
+                <div class="input" id="initial">
+                    <div class="label">Middle Name or Initial</div>
+                    <input type="text" class="input-text">
+                </div>
+
+            </div>
+
+            <div class="second-division">
+
+                <div class="left-side">
+
+                    <div class="input" id="address">
+                        <div class="label">Address</div>
+                        <input type="text" class="input-text">
+                    </div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="input" id="cia">
+                        <div class="label">Current Institutional Affilitation</div>
+                        <input type="text" class="input-text">
+                    </div>
+                    
+
+                </div>
+
+                <div class="right-side">
+
+                    <div class="input" id="home">
+                        <div class="label">Home Phone</div>
+                        <input type="text" class="input-text">
+                    </div>
+                    <div class="input" id="email">
+                        <div class="label">Email Address</div>
+                        <input type="text" class="input-text">
+                    </div>
+                    <div class="input" id="work">
+                        <div class="label">Dates</div>
+                        <input type="text" class="input-text">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="third-division">
+                <div class="left-side">
+
+                    <div class="input" id="highest-deg">
+                        <div class="label">Highest Degree Held or Expected</div>
+                        <input type="text" class="input-text">
+                    </div>
+                    <div class="input" id="phd-advisor">
+                        <div class="label">Ph.D. Advisor</div>
+                        <input type="text" class="input-text">
+                    </div>
+
+                </div>
+
+                <div class="right-side">
+                    <div class="input" id="granting-inst">
+                        <div class="label">Granting Institution</div>
+                        <input type="text" class="input-text">
+                    </div>
+                    <div class="input" id="phd-title">
+                        <div class="label">Ph.D. Title</div>
+                        <input type="text" class="input-text">
+                    </div>  
+
+                </div>
+
+
+            </div>
+
+            <div class="fourth-division">
+                <p>Indicate the subject areas in which you have done research using, If listing more than one number, list first the one number which best describes your current primary interest.</p>
+                
+                <div class="whole">
+                    <div class="left-side">
+
+                        <div class="input" id="first-int">
+                            <div class="label">First Interest</div>
+                            <input type="text" class="input-text">
+                        </div>
+    
+                    </div>
+                    <div class="right-side">
+    
+                        <div class="input" id="second-int">
+                            <div class="label">Secondary Interest</div>
+                            <input type="text" class="input-text">
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+
+            <div class="fifth-division">
+                <p class="one">Give a very brief synopsis of your current research interests in the box below (e.g. finite group actions on four-manifolds). Avoid special mathematical symbols.</p>
+                <textarea id="msg-text" rows="10" cols="35"></textarea>
+                <p class="two">Most recent position held, if any, post Ph.D.</p>
+            </div>
+
+            <div class="sixth-division">
+                <div class="left-side">
+                    <div class="input" id="uni">
+                        <div class="label">University or Company</div>
+                        <input type="text" class="input-text">
+                    </div>
+                </div>
+                <div class="middle-side">
+                    <div class="input" id="pos-title">
+                        <div class="label">Position Title</div>
+                        <input type="text" class="input-text">
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="input" id="dates">
+                        <div class="label">Dates</div>
+                        <input type="text" class="input-text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="seventh-division">
+                <div class="input" id="position">
+                    <div class="label">Indicate which position you are applying and position posting code, if applicable.</div>
+                    <input type="text" class="input-text">
+                </div>
+            </div>
+
+            <div class="eight-division">
+                <div class="left-side">
+                    <p>If applying for a position which requires U.S. citizenship or U.S. permanent residency, indicate your eligibility.</p>
+                    <div class="yes">
+                        <!-- <div class="circle"></div> -->
+                        <input type="radio" id="radio-btn1" name="citi" value="Yes">
+                        <label for="yes">Yes</label><br>
+                        <!-- <div class="option">Yes</div> -->
+                       
+                    </div>
+                        
+                    <div class="no">
+                        <!-- <div class="circle"></div>
+                        <div class="option">No</div> -->
+                        <input type="radio" class="radio-btn" name="citi" value="No">
+                        <label for="no">No</label><br>
+                    </div>
+
+                    <button type="button" onclick = "clearRadio()"> Clear </button>
+                     <!-- uncheck radio button? -->
+                </div>
+
+                <div class="right-side">
+                    <div class="firstq">
+                        <p>If unsuccessful for this position, would you like to be considered for a temporary position?</p>
+                        <div class="yes">
+                            <!-- <div class="circle"></div>
+                            <div class="option">Yes</div> -->
+                            <input type="radio" name="unsuc" value="Yes">
+                            <label for="yes">Yes</label><br>
+                        </div>
+                            
+                        <div class="no">
+                            <!-- <div class="circle"></div>
+                            <div class="option">No</div> -->
+                            <input type="radio" name="unsuc" value="No">
+                            <label for="no">No</label><br>
+                        </div>
+                    </div>
+                    <div class="secondq">
+                        <p>If yes, please check the appropriate:</p>
+                        <div class="yes">
+                            <!-- <div class="circle"></div>
+                            <div class="option">Postdoctoral Position</div> -->
+                            <input type="radio" name="approp" value="No">
+                            <label for="no">Postdoctoral Position</label><br>
+                        </div>
+                            
+                        <div class="no">
+                            <!-- <div class="circle"></div>
+                            <div class="option">2+ Year Position</div> -->
+                            <input type="radio" name="approp" value="No">
+                            <label for="no">2+ Year Position</label><br>
+                        </div>
+
+                        <div class="no">
+                            <!-- <div class="circle"></div>
+                            <div class="option">1 Year Position</div> -->
+                            <input type="radio" name="approp" value="No">
+                            <label for="no">1 Year Position</label><br>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="ninth-division">
+                <p>List the names and affiliations of up to four individuals who will provide letters of recommendation.
+                    Mark the box provided for each individual whom you have already asked to send a letter.</p>
+            </div>
+
+            <div class="big-tenth">
+                <div class="tenth-division">
+                    <div class="left-side">
+                        <!-- <div class="circle"></div> -->
+                        <!-- <p>1.</p> -->
+                        <div class="choice">
+                            <input class="radio-btn" type="radio" name="ref-check1" value="No">
+                            <label for="no">1. Reference Name</label>
+                        </div>
+                            
+                        <div class="input" id="ref-name">
+                            <!-- <div class="label">Reference Name</div> -->
+                            
+                            <input type="text" class="input-text">
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="input" id="ref-inst">
+                            <div class="label">Institution</div>
+                            <input type="text" class="input-text">
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="eleventh-division">
+                    <div class="input" id="ref-email">
+                        <div class="label">Email Address</div>
+                        <input type="text" class="input-text">
+                    </div>
+    
+                </div>
+
+                <div class="tenth-division">
+                    <div class="left-side">
+                        <!-- <div class="circle"></div>
+                        <p>2.</p> -->
+                        <div class="choice">
+                            <input class="radio-btn" type="radio" name="ref-check2" value="No">
+                            <label for="no">2. Reference Name</label>
+                        </div>
+                        <div class="input" id="ref-name">
+                            <!-- <div class="label">Reference Name</div> -->
+                            <input type="text" class="input-text">
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="input" id="ref-inst">
+                            <div class="label">Institution</div>
+                            <input type="text" class="input-text">
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="eleventh-division">
+                    <div class="input" id="ref-email">
+                        <div class="label">Email Address</div>
+                        <input type="text" class="input-text">
+                    </div>
+    
+                </div>
+
+                <div class="tenth-division">
+                    <div class="left-side">
+                        <!-- <div class="circle"></div>
+                        <p>3.</p> -->
+                        <div class="choice">
+                            <input class="radio-btn" type="radio" name="ref-check3" value="No">
+                            <label for="no">3. Reference Name</label>
+                        </div>
+                        <div class="input" id="ref-name">
+                            <!-- <div class="label">Reference Name</div> -->
+                            <input type="text" class="input-text">
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="input" id="ref-inst">
+                            <div class="label">Institution</div>
+                            <input type="text" class="input-text">
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="eleventh-division">
+                    <div class="input" id="ref-email">
+                        <div class="label">Email Address</div>
+                        <input type="text" class="input-text">
+                    </div>
+    
+                </div>
+
+                <div class="tenth-division">
+                    <div class="left-side">
+                        <!-- <div class="circle"></div>
+                        <p>4.</p> -->
+                        <div class="choice">
+                            <input class="radio-btn" type="radio" name="ref-check4" value="No">
+                            <label for="no">4. Reference Name</label>
+                        </div>
+                        <div class="input" id="ref-name">
+                            <!-- <div class="label">Reference Name</div> -->
+                            <input type="text" class="input-text">
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="input" id="ref-inst">
+                            <div class="label">Institution</div>
+                            <input type="text" class="input-text">
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="eleventh-division">
+                    <div class="input" id="ref-email">
+                        <div class="label">Email Address</div>
+                        <input type="text" class="input-text">
+                    </div>
+    
+                </div>
+
+            </div>
+
+
+            <div class="twelvth-division">
+        
+                    <p>Please check the applicable statements below.</p>
+                    <div class="terms">
+                        <!-- <div class="circle"></div>
+                        <div class="option">Notify me by email when new reference letters are uploaded by the writers.</div> -->
+                        <input class="radio-btn" type="radio" name="notify-email" value="No">
+                        <label for="no">Notify me by email when new reference letters are uploaded by the writers.</label>
+                    </div>
+                        
+                    <div class="terms">
+                        <!-- <div class="circle"></div>
+                        <div class="option">Remove my account and all files automatically once all the jobs I've applied to are finished.</div> -->
+                        <input class="radio-btn" type="radio" name="remove-acc" value="No">
+                        <label for="no">Remove my account and all files automatically once all the jobs I've applied to are finished.</label>
+                    </div>
+                
+            </div>
+
+            <div class="twelvth-division">
+        
+                <div class="andahalf">
+                    <p class="final-terms">Please note: applicant accounts, including all related files in the portfolio and reference letters, will automatically be purged 6 months (or 3 months, if you have checked the 'remove my account' above) after all jobs you have applied to are finished, and/or if you haven't logged in to AcademicJobsOnline.org for 12 months. Application files which are over 2 years old and reference letters which have been expired for 2 years are also periodically purged. Please keep copies of your important portfolio items on your own systems, in case you may need them later.</p>
+                <div class="terms">
+                    <!-- <div class="circle"></div>
+                    <div class="option">I understand the terms of submitting my coversheet.</div> -->
+                    <input class="radio-btn" type="radio" name="agree" value="No">
+                    <label for="no">I understand the terms of submitting my coversheet.</label>
+                  
+                </div>
+                </div>
+                    
+            </div>
+
+            <div class="thirteenth-division">
+                <button type="submit" class="submit-btn">SUBMIT</button>
+                <button type="submit" class="reset-btn">RESET</button>
+            </div>
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+       
+
+
+
+    </div>
+
+    <script src="coversheet.js"></script>
+</body>
+</html>

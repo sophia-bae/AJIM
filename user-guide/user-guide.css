@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+
+.container .title p{
+    font-size: 20px;
+    margin-bottom: 50px;
+    color:#052C6C;
+}
+.container .title a{
+    font-size: 20px;
+    margin-bottom: 50px;
+    color:#84101D;
+}
+.container .title a:hover{
+    font-size: 20px;
+    margin-bottom: 50px;
+    color:#84101D;
+    opacity: .5;
+}
+.first-section{
+    /* min-height: 100vh; */
+    width: 80%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#second{
+    margin-top: 30px;
+}
+.container .first-section h3{
+    text-align: center;
+    font-family: 'Libre Baskerville';
+    color: #84101D;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background:#84101D;
+    text-align: center;
+}
+
+/* list items */
+.container .first-section .list-container{
+    margin-top: 20px;
+    width: 300px;
+}
+.container .first-section .list-container .list{
+    list-style: none;
+    text-align: left;
+}
+.container .first-section .list-container .list-item{
+    margin-bottom: 15px;
+}
+.container .first-section .list-container .list-item a{
+    font-size: 18px;
+}
+.container .first-section .list-container .list-item a::before{
+    font-family: "Font Awesome 6 Free";
+    content: "\f138";
+    padding-right: 15px;
+}
+.container .first-section .list-container .list-item a:hover{
+    color:#5481cb;
+}
+.container .first-section .list-container .list-item a:active{
+    color:#052C6C;
+}
+
+
+/* responsive */
+@media screen and (max-width: 550px){
+    .container .first-section h3{
+        font-size: 20px;
+    }
+    .container .first-section .list-container{
+        width: 250px;
+    }
+    .container .first-section .list-container .list-item{
+        margin-bottom: 8px;
+    }
+    .container .first-section .list-container .list-item a{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 300px){
+    
+    .container .first-section .list-container{
+        width: 200px;
+    }
+}
+
+
+

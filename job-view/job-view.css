@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville:wght@700&display=swap');
+
+.top-part .buttons button{
+    background-color: white;
+    border: none;
+    color: #5585D3;
+    font-family: 'Lato';
+    font-weight: 900;
+    font-size: 20px;
+    margin-left: 20px;
+    text-align: center;
+    padding: 8px 15px;
+}
+.top-part .buttons .search-btn:hover{
+    color:#052C6C;
+    border-bottom: 2.5px solid #052C6C;
+    border-radius: 0px;  
+}
+.top-part .buttons .saved-btn:hover{
+    color:#052C6C;
+    border-bottom: 2.5px solid #052C6C;
+    border-radius: 0px;  
+}
+.top-part .buttons .search-btn:focus{
+    color:#052C6C;
+    border-bottom: 2.5px solid #052C6C;
+    border-radius: 0px;  
+}
+.top-part .buttons .saved-btn:focus{
+    color:#052C6C;
+    border-bottom: 2.5px solid #052C6C;
+    border-radius: 0px;  
+}
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #e1e1e1;
+    margin-bottom: 10px;
+}
+.second-part {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 5px;
+}
+.second-part .filters button{
+    margin: 5px;
+    background-color: #DAE6FB;
+    color: #052C6C;
+    border:none;
+    font-family: 'Lato';
+    font-weight: 700px;
+    margin-bottom: 10px;
+
+}
+.second-part .filters button:hover{
+    color:#DAE6FB;
+    background:#052C6C;
+}
+
+
+/* scroll sections (left) */
+.scroll-sections{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+.scroll-sections .left-scroll{
+    overflow:scroll;
+     /* viewport height - check and modify */
+    height: 68vh;
+}
+.scroll-sections .left-scroll .info{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.scroll-sections .left-scroll .info .num-jobs{
+    margin-left: 10px;
+}
+.scroll-sections .left-scroll .info .rel{
+    padding-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.scroll-sections .left-scroll .info i{
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.scroll-sections .left-scroll .box {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1.5px solid #e1e1e1;
+    width: 100%;
+}
+.scroll-sections .left-scroll .box h5{
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+.scroll-sections .left-scroll .box h6{
+    color: #052C6C;
+}
+.scroll-sections .left-scroll .box .right-side{
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+}
+
+.scroll-sections #bookmark.fa-solid.fa-bookmark{
+    color: #cccccc;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    padding-top: 12px;
+    margin-right: 7px;
+    cursor: pointer;
+    font-size: 25px;
+}
+.scroll-sections #bookmark.fa-solid.fa-bookmark.checked{
+    color:#052C6C;
+}
+
+
+.scroll-sections #exclam-point{
+    color: #84101D;
+    font-size: 30px;
+    padding-left: 7px;
+    padding-top: 9px;
+    cursor: pointer;
+}
+
+
+
+/* right scroll */
+.scroll-sections .right-scroll .upcoming h4{
+    font-size: 18px;
+    background-color:#052C6C;
+    color: white;
+    padding: 12px;
+    margin-bottom: 0px;
+}
+.scroll-sections .right-scroll .actual-scroll{
+    overflow:scroll;
+    /* viewport height - check and modify */
+    height: 61vh;
+    margin-top: 10px;
+}
+.scroll-sections .right-scroll .box {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1.25fr 1fr 1.5fr;
+    /* border-bottom: 1.5px solid #e1e1e1; */
+    width: 100%;
+    
+}
+.scroll-sections .right-scroll .box h5{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.scroll-sections .right-scroll .box h6{
+    color: #052C6C;
+    font-size: 16px;
+}
+.scroll-sections .right-scroll .box .center-side{
+    display: flex;
+    margin-top: 0px;
+    /* margin-left: 60px; */
+}
+.scroll-sections .right-scroll .box .right-side button{
+    float: right;
+    margin-right: 20px;
+}
+.scroll-sections .right-scroll .middle-center{
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.scroll-sections .right-scroll .middle-center h5{
+    font-size: 20px;
+}
+.scroll-sections .right-scroll .middle-center h6{
+    font-size: 16px;
+    color:#052C6C;
+}
+.scroll-sections .right-scroll .bottom-center p{
+    padding-left: 10px;
+    margin-top: 40px;
+}
+
+
+
+/* search bar */
+
+
+
+@media only screen and (max-width: 1110px){
+    .second-part .filters button{
+        margin-left: 20px;
+    }
+}
+@media only screen and (max-width: 907px){
+    .second-part {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .second-part .filters button{
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 865px){
+    .second-part {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 1fr;
+        margin-bottom: 0px;
+    }
+    .second-part .searchBar{
+        margin-bottom: 10px;
+    }
+    .second-part .filters{
+        margin-bottom: 10px;
+    }
+    .second-part .filters button{
+        margin: 5px;
+        background-color: #DAE6FB;
+        color: #052C6C;
+        border:none;
+        font-family: 'Lato';
+        font-weight: 700px;
+        
+    }
+    .scroll-sections{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .scroll-sections .right-scroll{
+        display:none;
+    }
+}
+@media only screen and (max-width: 510px){
+    .second-part {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .25fr 1fr;
+    }
+    .second-part .searchBar{
+        margin-bottom: 10px;
+    }
+    .second-part .filters{
+        margin-bottom: 10px;
+    }
+    .second-part .filters button{
+        margin: 5px;
+        background-color: #DAE6FB;
+        color: #052C6C;
+        border:none;
+        font-family: 'Lato';
+        font-weight: 700px;
+    }
+    .scroll-sections .right-scroll{
+        display:none;
+    }
+
+    
+}
+@media only screen and (max-width: 450px){
+    .searchBar{  /* the div containing the search bar input and the icon button */
+        width: 330px;
+      }
+    .inputSearch{
+        border-radius: 50px;
+    }
+}
+@media only screen and (max-width: 380px){
+    .searchBar{  /* the div containing the search bar input and the icon button */
+        width: 300px;
+      }
+}
+@media only screen and (max-width: 365px){
+    .searchBar{  /* the div containing the search bar input and the icon button */
+        width: 250px;
+      }
+}

@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Libre+Baskerville:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    color: #052C6C
+}
+/* heading */
+.go-back button{
+    border-style: solid;
+  border-color: #052C6C;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #052C6C;
+  padding: 8px 32px;
+  color: white;
+  font-weight: 700;
+  font-family: 'Lato';
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.fa-arrow-left:before{
+    color: white;
+    position: left;
+}
+.coversheet-container .heading h1{
+    margin-top: 40px;
+    text-align: center;
+}
+.coversheet-container .heading p{
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.input-text:focus {
+    outline-width: 0;
+}
+/* first division */
+.form .first-division{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.form .first-division .input{
+    margin-top: 20px;
+
+}
+.form .first-division .input .input-text{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1.5px solid #052C6C;
+    width: 225px;
+    height: 25px;
+}
+/* second division */
+.form .second-division{
+    margin-left: 50px;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.form .second-division .left-side #cia .label{
+    padding-top: 50px;
+}
+.form .second-division .right-side #work .label{
+    padding-top: 50px;
+}
+.form .second-division .input{
+    margin-top: 20px;
+    
+}
+.form .second-division .left-side .input .input-text{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1.5px solid #052C6C;
+    width: 90%;
+    height: 25px;
+}
+.form .second-division .left-side .line{
+    width: 90%;
+    height: 1.5px;
+    background-color:#052C6C;
+    margin-top: 30px;
+}
+.form .second-division .right-side .input .input-text{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1.5px solid #052C6C;
+    width: 85%;
+    height: 25px;
+}
+/* third division */
+.form .third-division{
+    margin-left: 50px;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.form .third-division .input .input-text{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1.5px solid #052C6C;
+    width: 90%;
+    height: 25px;
+    margin-bottom: 20px;
+}
+/* fourth division */
+.form .fourth-division p{
+    margin-left: 50px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    font-size: 85%;
+}
+.form .fourth-division .whole{
+    margin-left: 50px;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.form .fourth-division .input .input-text{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1.5px solid #052C6C;
+    width: 90%;
+    height: 25px;
+    margin-bottom: 20px;
+}
+/* fifth division */
+.form .fifth-division .one{
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    font-size: 85%;
+}
+.fifth-division .two{
+    padding-top: 50px;
+}
+.form .fifth-division #msg-text{
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    border: 1.5px solid #052C6C;
+    width: 90%;
+    height: 100px;
+    resize: none;
+}
+.form .fifth-division #msg-text{
+    outline-width: 0;
+    padding: 5px 7px;;
+}
+.form .fifth-division .two{
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+/* sixth division */
+.form .sixth-division {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1.25fr;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+.form .sixth-division .input .input-text{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1.5px solid #052C6C;
+    width: 90%;
+    height: 25px;
+    margin-bottom: 20px;
+}
+/* seventh division */
+.form .seventh-division .input{
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+.form .seventh-division .input .input-text{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1.5px solid #052C6C;
+    width: 98%;
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+/* eighth division */
+.eight-division{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+}
+.eight-division .left-side p{
+    margin-bottom: 10px;
+}
+.eight-division .left-side{
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+/* .eight-division .circle{
+    
+    border: 1.5px solid #052C6C;
+    border-radius: 100px;
+    
+    width: 17px;
+    height: 17px;
+    min-width: 17px;
+    min-height: 17px;
+    display: block;
+    cursor:pointer;
+} */
+/* input radio button */
+.eight-division .left-side input{
+    color:#052C6C;
+    width: 17px;
+    border: 1.5px solid #052C6C;
+}
+.eight-division .left-side label{
+    margin-left: 10px;
+}
+/* input radio button */
+.eight-division .right-side input{
+    color:#052C6C;
+    width: 17px;
+    border: 1.5px solid #052C6C;
+}
+.eight-division .right-side label{
+    margin-left: 10px;
+}
+
+
+
+/* .eight-division .left-side .option{
+
+    margin-left: 10px;
+}
+.eight-division .right-side .option{
+    margin-left: 10px;
+} */
+.eight-division .left-side .yes, .no{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.eight-division .right-side{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+.eight-division .secondq{
+    margin-top: 20px;
+}
+.eight-division .right-side .firstq .yes, .no{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.eight-division .right-side .secondq .yes, .no{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* ninth-division */
+.ninth-division{
+    margin-top: 50px;
+}
+.ninth-division p{
+    font-size: 85%;
+    margin: 10px 50px;
+}
+/* tenth division */
+.tenth-division{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+/* .tenth-division .circle{
+    
+    border: 1.5px solid #052C6C;
+    border-radius: 100px;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    /* width: 17px;
+    height: 17px;
+    min-width: 17px;
+    min-height: 17px;
+    display:block;
+    cursor:pointer;
+}  */
+.big-tenth .tenth-division .choice .radio-btn{
+    color:#052C6C;
+    width: 17px;
+    height: 17px;
+    background-color: red;
+    border: 1.5px solid #052C6C;
+}
+.tenth-division .left-side label{
+    margin-left: 10px;
+}
+.tenth-division .left-side p{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+/* .tenth-division .left-side .input {
+    width: 100%;
+} */
+.form .tenth-division .input .input-text{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1.5px solid #052C6C;
+    width: 90%;
+    height: 25px;
+    margin-bottom: 10px;
+    
+}
+.form .tenth-division .left-side .input .input-text{
+    margin-left: 40px;
+    width: 77%;
+}
+/* eleventh division */
+.form .eleventh-division{
+    margin-left: 90px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+.form .eleventh-division .input .input-text{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1.5px solid #052C6C;
+    width: 95%;
+    height: 25px;
+    margin-bottom: 20px;
+}
+/* twelvth */
+.twelvth-division{
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+.twelvth-division .terms{
+    display: flex;
+    margin-top: 15px;
+}
+.twelvth-division .terms .option{
+    margin-left: 7px;
+}
+/* .twelvth-division .circle{
+    border: 1.5px solid #052C6C;
+    border-radius: 100px;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    /* width: 17px;
+    height: 17px;
+    min-width: 17px;
+    min-height: 17px;
+    display: block;
+    cursor:pointer;
+}  */
+.twelvth-division .final-terms{
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.twelvth-division .radio-btn{
+    color:#052C6C;
+    width: 17px;
+    height: 17px;
+    background-color: red;
+    border: 1.5px solid #052C6C;
+}
+.twelvth-division label{
+    margin-left: 10px;
+}
+
+/* buttons */
+.thirteenth-division{
+    text-align: center;
+    margin: 50px;
+
+}
+.form .thirteenth-division button{
+    margin: 10px 5px;
+}
+.form .submit-btn{
+    margin-top: 20px;
+    border: none;
+    background-color: #052C6C;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.form .submit-btn:hover{
+    background-color: #EBF2FE;
+    font-weight: 700;
+    border-style: solid;
+    border-color: #052C6C;
+    color:#052C6C;
+}
+
+.form .reset-btn{
+    margin-top: 20px;
+    border: none;
+    background-color: #A9BBDB;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.form .reset-btn:hover{
+    background-color: white;
+    font-weight: 700;
+    border-style: solid;
+    border-color: #A9BBDB;
+    color:#A9BBDB;
+}

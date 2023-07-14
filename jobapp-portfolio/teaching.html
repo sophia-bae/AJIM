@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Statement</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="coverletter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body class="everythangg">
+
+    <div class="coverletter-container">
+        <div class="go-back">
+            
+            <a href="portfolio.html">
+                
+                <button class="go-back-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    &nbsp; Go Back to My Portfolio
+                </button>
+            </a>
+            
+        </div>
+
+        <div class="heading">
+            <h3 class="title">Teaching Statement</h3>
+            <p class="desc">You can upload files in the following formats: PDF (preferred), Word, Excel, PPT, OpenOffice, GIF, JPEG, PNG, LaTeX, TeX, URL, HTML, TEXT, MP4 (video), MP3 (audio). All uploaded files will be converted into PDF format by the server. You can also enter the text directly into the provided area below. If your file is larger than 10MB in size or it's an audio/video file, please see the FAQ on what to do.</p>
+        </div>
+
+        <div class="middle-section">
+            <div class="left-side">
+                <div class="input" id="entry-name">
+                    <label>Entry Name</label>
+                    <input type="text" class="inputLine">
+                </div>
+
+                <div class="inputTwo">
+                    <div class="sel-file">Select a File to Upload</div>
+
+                    <input type="file" id="file-input" multiple />
+
+                    <label class="choose-file-btn"for="file-input">
+                        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                        &nbsp; Choose File(s) To Upload
+                    </label>
+
+                    <div id="num-of-files">No Files Chosen</div>
+
+                    <ul id="files-list"></ul> 
+
+                </div>
+
+                <!-- <div class="inputTwo" id="file-upload">
+                    <label>Select a File to Upload</label> -->
+                        <!-- <input type="file" id="file-input" multiple />
+                        <label class="choose-file-btn"for="file-input">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            &nbsp; Choose File(s) To Upload
+                        </label>
+                        <div id="num-of-files">No Files Chosen</div>
+                        <ul id="files-list"></ul> -->
+                    <!-- </div>
+                </div> -->
+            </div>
+
+            <div class="right-side">
+                <div class="input" id="typeinbox">
+                    <label>Type in the box below, if there are no files to upload.</label>
+                    <textarea id="msg-text" rows="10" cols="35"></textarea>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="btns">
+            <button type="submit" class="submit-btn">SUBMIT</button>
+            <button type="submit" class="reset-btn">RESET</button>
+        </div>
+
+
+
+    </div>
+
+    <script src="coverletter.js"></script>
+</body>
+</html>
