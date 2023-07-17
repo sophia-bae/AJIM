@@ -2,6 +2,42 @@
 .renewal-container p{
     color: #052C6C;
 }
+.renewal-container ul{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.renewal-container ul li{
+    line-height: 1.5em;
+}
+.renewal-container table{
+    font-family: 'Lato';
+    color:#052C6C;
+}
+.renewal-container table tr td input{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    font-family: 'Lato';
+    color:#052C6C;
+}
+.renewal-container .buttons{
+    text-align:center;
+}
+.renewal-container .reset-btn{
+    background-color: #A9BBDB;
+    color: white;
+    border-color: #A9BBDB;
+    margin-left: 10px;
+}
+.renewal-container .reset-btn:hover{
+    background-color: white;
+    font-weight: 700;
+    border-style: solid;
+    border-color: #A9BBDB;
+    color: #A9BBDB;
+}
 .renewal-container button{
     margin-top: 10px;
 }
